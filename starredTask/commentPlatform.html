@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сервис комментариев</title>
+    <link rel="stylesheet" href="commentPlatform.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Сервис комментариев со спам-фильтром</h1>
+    </header>
+    <main>
+      <section class="section1">
+        <h2>Оставьте Ваш комментарий</h2>
+        <label for="inputName">Введите Ваше имя:</label>
+        <input type="text" name="name" id="inputName" />
+        <label for="avatarLink">Введите ссылку Вашего аватара:</label>
+        <input type="text" name="avatarLink" id="avatarLink" />
+        <label for="comment">Оставьте комментарий:</label>
+        <textarea name="comment" id="comment" rows="10"></textarea>
+        <div>
+          <button id="btn">Отправить</button>
+        </div>
+      </section>
+      <section class="section2">
+        <h2>Чат</h2>
+        <div class="user">
+          <img id="userAvatar" src="" alt="Аватар пользователя" />
+          <!-- <div id="userAvatar">Аватарка</div> -->
+          <div id="userName"></div>
+        </div>
+        <div id="userComment"></div>
+      </section>
+    </main>
+    <script src="commentPlatform.js"></script>
+  </body>
+</html>
